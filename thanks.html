@@ -10,9 +10,15 @@
 
     <h1>Thank You!</h1>
 
+    <script>
+        const params = new URLSearchParams(location.search);
+        const name = params.get("name");
+        document.querySelector("h1").textContent = "Thank you, " + name;
+    </script>
+
     <p>Your form has been submitted successfully.</p>
 
     <a href="index.html">Back to Home</a>
 
-</body>
+</body> 
 </html>
